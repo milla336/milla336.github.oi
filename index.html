@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mila Front-end | Portfólio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0078ff, #00d9a6);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+      max-width: 500px;
+      margin: 10px auto 0;
+    }
+
+    section {
+      width: 100%;
+      max-width: 900px;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .project h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Avatar do GitHub -->
+    <img src="https://avatars.githubusercontent.com/u/182219468?v=4" alt="Foto de perfil da Mila" />
+    <h1>Mila Front-end</h1>
+    <p>Desenvolvedora Front-end Júnior apaixonada por tecnologia, design e boas experiências digitais 💙💚</p>
+  </header>
+
+  <section>
+    <h2>🚀 Meus Projetos</h2>
+    <div class="projects">
+      <a href="https://milla336.github.io/pagina-responsiva-Magic/" target="_blank" class="project">
+        <h3>🪄 Página Responsiva Magic</h3>
+        <p>Um site moderno e adaptável para todos os tamanhos de tela.</p>
+      </a>
+
+      <a href="https://milla336.github.io/loja-de-aparelhos-eletr-nicos/" target="_blank" class="project">
+        <h3>💻 Loja de Aparelhos Eletrônicos</h3>
+        <p>Uma loja virtual simples e estilosa, feita com HTML, CSS e JS.</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mila Front-end | Feito com 💙 e 💚
+  </footer>
+</body>
+</html>
