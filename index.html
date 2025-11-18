@@ -13,8 +13,8 @@
     }
 
     body {
-      background: linear-gradient(135deg, #0078ff, #00d9a6);
-      color: #fff;
+      background: linear-gradient(135deg, #132f37, #00d9a6);
+      color: #15ba8b;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -30,7 +30,7 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      border: 4px solid #fff;
+      border: 4px solid #1cb948;
       margin-bottom: 15px;
     }
 
@@ -55,7 +55,6 @@
     h2 {
       text-align: center;
       margin: 40px 0 20px;
-      border-bottom: 2px solid #fff;
       display: inline-block;
       padding-bottom: 5px;
     }
@@ -67,25 +66,54 @@
     }
 
     .project {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(105, 243, 167, 0.1);
       padding: 30px 20px;
       border-radius: 15px;
       text-align: center;
       transition: transform 0.3s, background 0.3s;
       cursor: pointer;
       text-decoration: none;
-      color: #fff;
+      color: #02130b;
     }
 
     .project:hover {
       transform: scale(1.05);
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(4, 35, 21, 0.2);
     }
 
     .project h3 {
       font-size: 1.3rem;
       margin-bottom: 10px;
     }
+    .foto-perfil {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 3px solid #16d766;
+      
+    }
+
+    .foto-perfil img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover ;
+    }
+
+    .img-projeto {
+
+  width: 80%;     
+  margin-top: 15px;
+  border-radius: 10px;
+  height: 120px;     
+  object-fit: cover; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    
 
     footer {
       margin-top: 50px;
@@ -105,28 +133,36 @@
 <body>
   <header>
     <!-- Avatar do GitHub -->
-    <img src="https://avatars.githubusercontent.com/u/182219468?v=4" alt="Foto de perfil da Mila" />
+
     <h1>Mila Front-end</h1>
-    <p>Desenvolvedora Front-end Júnior apaixonada por tecnologia, design e boas experiências digitais 💙💚</p>
+    <p>Desenvolvedora Front-end Júnior apaixonada por tecnologia, design e boas experiências digitais 💻</p>
+
+     <div class="foto-perfil"> <img src="imagens/avatar.jpg" alt="foto-perfil" >
+      <div>
   </header>
+  
 
   <section>
-    <h2>🚀 Meus Projetos</h2>
+    <h2>🌐 Meus Projetos</h2>
     <div class="projects">
       <a href="https://milla336.github.io/pagina-responsiva-Magic/" target="_blank" class="project">
-        <h3>🪄 Página Responsiva Magic</h3>
+        <h3>🪄 Página Responsiva para todas as telas</h3>
         <p>Um site moderno e adaptável para todos os tamanhos de tela.</p>
+         <img src="imagens/magick.png" class="img-projeto" alt="Imagem do projeto">
+</a>
       </a>
 
       <a href="https://milla336.github.io/loja-de-aparelhos-eletr-nicos/" target="_blank" class="project">
         <h3>💻 Loja de Aparelhos Eletrônicos</h3>
         <p>Uma loja virtual simples e estilosa, feita com HTML, CSS e JS.</p>
+        <img src="imagens/eletronicos.png" class="img-projeto" alt="Imagem do projeto">
+</a>
       </a>
     </div>
   </section>
 
   <footer>
-    © 2025 Mila Front-end | Feito com 💙 e 💚
+    © 2025 Mila Front-end 
   </footer>
 </body>
 </html>
